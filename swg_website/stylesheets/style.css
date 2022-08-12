@@ -1,0 +1,528 @@
+html{
+  width:  100%;
+}
+
+#logo {
+  display: block;
+  margin-right: auto;
+  width: 30%;
+  border: solid lightgrey 14px;
+  background-color: lightgrey;
+}
+
+#navbar {
+  border: solid grey 8px;
+}
+
+#slideshow_title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+* {box-sizing:border-box}
+
+.videos-container {
+  position: relative;
+  margin: auto;
+  background-color: lightgrey;
+  max-width: 75%;
+  max-height: 75%;
+  border: 8px solid grey;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.videos-container2 {
+  position: relative;
+  margin: auto;
+  background-color: lightgrey;
+  max-width: 100%;
+  max-height: 100%;
+  border: 8px solid grey;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  background-color: lightgrey;
+  max-width: 75%;
+  max-height: 75%;
+  border: 8px solid grey;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #FF0000;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #0077B5;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+#font0 {
+  font-family: Arial;
+}
+
+.topbox {
+  border: 5px solid black;
+  background-color: lightgrey;
+  padding: 0.5%;
+  width: 68%;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box0
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 67%;
+  height: 420px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box1
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 67%;
+  height: 970px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box2
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 67%;
+  height: 1360px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box3
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 67%;
+  height: 2300px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box4
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 68%;
+  height: 1330px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box5
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 68%;
+  height: 1010px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box6
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 68%;
+  height: 1440px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+#box7
+{
+  border: 5px solid black;
+  background-color: white;
+  padding: 20px;
+  width: 68%;
+  height: 1800px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Times New Roman, serif;
+  font-size: 16px;
+}
+
+footer{
+  text-align: center;
+  padding: 1% 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer{
+  color: white;
+}
+
+
+.img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+.pad_this{
+  padding-bottom: 2.5%;
+}
+
+.img0{
+  width: 85%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid grey; 
+  border-radius: 10px;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: dimgrey;
+  color: white;
+}
+
+.about-section2 {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  border: 4px solid dimgrey;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+  /* Search Box styles */
+.search-box{
+    border: solid 1px #52057b;
+    margin-top: 20px;
+    padding: 40px;
+    display:flex;
+    justify-content: center;
+    box-shadow:1px 2px 3px #52057b;
+}
+
+.search-box select{
+    padding: 10px;
+}
+
+.search-box input{
+    padding: 10px;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#fff;
+    color:#000000;
+}
+
+.search-box button:hover{
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* search box for smrtphones */
+@media screen and (max-width: 460px){
+    .search-box input, .search-box button, .search-box select{
+        min-width: 300px;
+        margin-top: 5px;
+    }    
+
+}
+
+/* searchbar on blog pg  */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #717171;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  box-shadow: 0.25rem 0.25rem 0rem rgb(255,215,0);
+}
+
+input {
+  margin: 0 0.5rem 0 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #717171;
+  color: white;
+}
+
+::placeholder {
+  color: rgb(255,215,0);
+}
+
+#planets_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: grey;
+  border-width: 4px;
+}
